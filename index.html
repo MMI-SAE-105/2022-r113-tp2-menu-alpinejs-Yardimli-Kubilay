@@ -15,7 +15,10 @@
         menu
       </button>
       <h1>Test de menu</h1>
-      <nav id="mainNav" x-show="menuIsOpen">
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+         <span x-show="open" x-transition>
+              Les items 😼
+          </span>
         <ul>
           <li><a href="#">item 1</a></li>
           <li><a href="#">item 2</a></li>
